@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(206, 47%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+body>div{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(204, 202, 202);
+}
+div article{
+    padding: 20px;
+}
+div article.community{
+    background-color: #FFF;
+}
+div article.community h1{
+    color:  hsl(179, 62%, 43%);
+}
+div article.community span{
+    color: hsl(71, 73%, 54%);
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 19px;
+}
+div article.community p{
+    color: hsl(220, 12%, 80%);
+    line-height: 1.6;
+    font-size: 18px;
+}
+div article.subscription{
+    background-color: hsl(179, 61%, 44%);
+    color: #FFF;
+}
+div article.subscription h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+div article.subscription span.price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: hsl(181, 78%, 82%);
+}
+div article.subscription span.price span{
+    font-weight: 700;
+    font-size: 35px;
+    color: #FFF;
+}
+div article.subscription .btn{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background: hsl(71, 73%, 54%);
+    margin-top: 20px;
+    padding: 15px 0;
+    box-shadow: 0 0 15px hsl(71, 66%, 44%);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+div article.about{
+    background-color: hsl(179, 47%, 52%);
+    color: #FFF;
+}
+div article.about h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+div article.about ul{
+    list-style: none;
+    margin: 20px 0;
+}
+div article.about ul li{
+    color: hsl(182, 76%, 92%);
+}
+@media (min-width: 768px) {
+    body>div{
+        width: 680px;
+    }
+    .articles{
+        display: flex;
+    }
+    .articles article{
+        width: 50%;
+    }
+}
